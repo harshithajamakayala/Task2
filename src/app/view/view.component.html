@@ -1,0 +1,29 @@
+
+<table style=" width: 100%;height: 10%;background-color: rgb(187, 210, 203);">
+    <tr>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/Business" style="color: #000;">Business</a>  </td>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/Politics" style="color: #000;">Politics</a>  </td>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/World" style="color: #000;">World</a>  </td>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/Sports" style="color: #000;"> Sports</a>  </td>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/Technology" style="color: #000;">Technology</a>  </td>
+      <td style="width: 15%; text-align: center;">  <a routerLink="/Crime" style="color: #000;"> Crime</a>  </td>
+      </tr>
+  </table> 
+  <div *ngFor="let n of allNews" style="background-color:  rgb(193, 197, 196)">
+    <table >
+        <tr>
+            <td> <img src="/assets/images/{{n.image}}" alt="image" width="150px" height="150px">
+            </td>
+            <td>
+                <h2>{{n.headline}} </h2>
+                <hr />
+                <h4> {{n.category}} </h4>
+                <br>
+                <p>{{n.mainNews|mydiscript:20}}</p>
+            </td>
+        </tr>
+        <hr>
+    </table>
+</div>
+
+<router-outlet></router-outlet>

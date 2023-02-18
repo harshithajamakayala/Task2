@@ -1,0 +1,17 @@
+<div *ngFor="let n of allNews" style="background-color: rgb(218, 228, 192);">
+    <table *ngIf="n.category=='Sports'">
+        <tr>
+            <td> <img src="/assets/images/{{n.image}}" alt="image" width="150px" height="150px">
+            </td>
+            <td>
+                <h2>{{n.headline}} </h2>
+                <hr />
+                <h4> {{n.category}} </h4>
+                <br>
+                <p>{{n.mainNews}}</p>
+            </td>
+        </tr>
+        <hr>
+    </table>
+</div>
+

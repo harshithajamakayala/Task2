@@ -1,0 +1,26 @@
+<hr>
+<br>
+<table  style="background-color: rgb(193, 197, 196);border: 1px;border-color: black;">
+    <tr>
+        <td> Enter  Headline </td>
+        <td> <input type="text" #headline/> </td>
+    </tr>
+    <tr>
+        <td> Enter Category </td>
+        <td> <input type="text" #category/> </td>
+    </tr>
+    <tr>
+        <td> Enter Main News </td>
+        <td> <input type="text" #mainnews/> </td>
+    </tr>
+    <tr>
+        <td> Image Name </td>
+        <td> <input type="text" #image/> </td>
+    </tr>
+    <tr>
+            <button   value="Add news"  (click)="ReadNews(headline.value,category.value,mainnews.value,image.value)">
+                Add News</button>
+    </tr>
+
+</table>
+<br/>
