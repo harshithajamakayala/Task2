@@ -13,6 +13,7 @@ import { CrimeComponent } from './crime/crime.component';
 import { WorldComponent } from './world/world.component';
 import { TechnologyComponent } from './technology/technology.component';
 import { DiscriptionPipe } from './discription-pipe';
+import { DetailedNewsComponent } from './detailed-news/detailed-news.component';
 
 
 const allLinks:Routes = [
@@ -24,6 +25,7 @@ const allLinks:Routes = [
   {path:'Technology',component:TechnologyComponent},
   {path:'Politics',component:PoliticsComponent},
   {path:'launchNews',component:AddNewsComponent  },
+  {path:'detailed/:name',component:DetailedNewsComponent}
 ]
 
 @NgModule({
@@ -37,7 +39,8 @@ const allLinks:Routes = [
     CrimeComponent,
     WorldComponent,
     TechnologyComponent,
-    DiscriptionPipe
+    DiscriptionPipe,
+    DetailedNewsComponent
   
     
   ],

@@ -33,6 +33,22 @@ export class NewsServiceOperationsService {
     });
     return outputArr;
   }
+  getNewsByName(searchRestaurantId:string):News
+  {
+    let outputRest:News = new News('','','','');
+    for(let i=0;i<this.newsArr.length;i++)
+    {
+      let thisRest:News  = this.newsArr[i];
+        if(thisRest.category == searchRestaurantId)
+        {
+          outputRest = thisRest;
+          break;
+        }
+    }
+    
+    return outputRest;
+  }
+
 
 
 }

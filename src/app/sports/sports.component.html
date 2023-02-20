@@ -8,8 +8,10 @@
                 <hr />
                 <h4> {{n.category}} </h4>
                 <br>
-                <p>{{n.mainNews}}</p>
+                <p>{{n.mainNews|mydiscript:20}}</p>
             </td>
+            <button value="{{n.category}}" (click)=" viewDetails(news.value)" #news>
+                View Details</button>
         </tr>
         <hr>
     </table>
